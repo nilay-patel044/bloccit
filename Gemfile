@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.2'
 group :production do
   # Use pg as the production database for Active Record
   gem 'pg'
-  gem 'rails_12factor'  
+  gem 'rails_12factor'
 end
 
 # #2
@@ -39,4 +39,9 @@ gem 'thor', '0.19.1'
 
 group :development do
   gem 'listen', '~> 3.0.5'
+end
+
+group :development, :test do
+ gem 'rspec-rails', '~> 3.0'
+ gem 'rails-controller-testing'
 end
